@@ -1,0 +1,19 @@
+---
+server:
+  port: 8888
+security:
+  basic:
+    enabled: true
+  user:
+    name: user1
+    password: password
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/craigmgordon/cloud-config
+          #username:
+          #password:
+          search-paths:
+            - 'app*'
